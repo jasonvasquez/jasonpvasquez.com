@@ -1,7 +1,7 @@
 var Configuration = {
 
   // -- API endpoint
-  apiEndpoint: 'https://lesbonneschoses.prismic.io/api',
+  apiEndpoint: 'https://mugfu.prismic.io/api',
   //accessToken: '',
 
   // -- OAuth

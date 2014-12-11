@@ -26,7 +26,7 @@
           // retrieve the API
           global.Helpers.getApiHome(function(err, api, xhr) {
             if (err) { Configuration.onPrismicError(err, xhr); return; }
-            var experimentCookie = prismic.startExperiment ? prismic.utils.docCookies.getItem('io.prismic.experiment') : null;
+            var experimentCookie = Prismic.startExperiment ? Prismic.utils.docCookies.getItem('io.prismic.experiment') : null;
             var experimentRef = experimentCookie ? api.experiments.refFromCookie(experimentCookie) : null;
             var ctx = {
               ref: (ref || experimentRef || api.data.master.ref),
